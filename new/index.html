@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suhail Showkat | Portfolio</title>
+  <meta name="description" content="Suhail Showkat - Computer Science Engineer specializing in embedded systems and software development. Explore my projects and skills.">
+  <meta name="keywords" content="Suhail Showkat, Embedded Systems, Arduino, C++, Python, Portfolio, Computer Science Engineer">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2c3e50;
+      --light-color: #f8f9fa;
+      --dark-color: #343a40;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border: 5px solid white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .section-title {
+      position: relative;
+      margin-bottom: 40px;
+      color: var(--secondary-color);
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--primary-color);
+    }
+    
+    .skill-item {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .skill-icon {
+      font-size: 50px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    
+    .project-card {
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    footer {
+      background: var(--secondary-color);
+      color: white;
+      padding: 30px 0;
+    }
+    
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+      transition: color 0.3s;
+    }
+    
+    .social-icon:hover {
+      color: var(--primary-color);
+    }
+    
+    .typed-cursor {
+      opacity: 1;
+      animation: blink 0.7s infinite;
+    }
+    
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header/Navigation -->
+  <header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Suhail Showkat</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <h1>Suhail Showkat</h1>
+      <p class="typed-text">I'm a <span class="typed" data-typed-items="Computer Science Engineer, Embedded Systems Developer, Technology Enthusiast, Problem Solver"></span></p>
+      <img src="/new/suhail.jpg" alt="Suhail Showkat" class="profile-img rounded-circle mt-4">
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Computer Science Engineer & Embedded Systems Developer</h3>
+            <p>
+              I am Suhail Showkat, a passionate and dedicated technology enthusiast currently pursuing my B.Tech in Computer Science and Engineering.
+              I am driven by a desire to solve real-world problems through innovative and efficient technological solutions.
+            </p>
+            <p>
+              My interests span across embedded systems, software development, artificial intelligence, robotics, and machine learning. 
+              I am especially fascinated by how these fields can converge to build systems that are reliable, user-friendly, and impactful.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="personal-info">
+              <h4>Personal Information</h4>
+              <ul class="list-unstyled">
+                <li><strong>Email:</strong> suhailshowkat112@outlook.com</li>
+                <li><strong>Phone:</strong> +91 9682175594</li>
+                <li><strong>Location:</strong> Srinagar, Jammu & Kashmir</li>
+                <li><strong>Education:</strong> B.Tech in Computer Science & Engineering</li>
+              </ul>
+              
+              <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/suhail-showkat-2ba317252" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/suhail.showkat_?igsh=OTNxOHN3a2d6YmN5" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/919682175594" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h4>Embedded Systems</h4>
+              <p>Arduino, Microcontrollers, Sensor Integration</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Programming</h4>
+              <p>C, C++, Python, Data Structures</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4>Robotics</h4>
+              <p>Gesture Control, Autonomous Systems</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h4>Machine Learning</h4>
+              <p>Python, Basic Algorithms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+        
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-6">
+            <div class="card project-card">
+              <div class="card-body">
+                <h3 class="card-title">Gesture-Controlled Arduino Car</h3>
+                <h6 class="card-subtitle mb-2 text-muted">Embedded Systems Project</h6>
+                <p class="card-text">
+                  Designed a car that can be controlled using hand gestures, enhancing accessibility and promoting innovation in robotic systems.
+                </p>
+                <h5>Key Components:</h5>
+                <ul>
+                  <li>Arduino Uno & Nano</li>
+                  <li>nRF24L01 Wireless Module</li>
+                  <li>MPU6050 Sensor</li>
+                  <li>L298N Motor Driver</li>
+                </ul>
+                <h5>Applications:</h5>
+                <ul>
+                  <li>Hands-free control for limited mobility</li>
+                  <li>Hazardous environment interaction</li>
+                  <li>Robotics education</li>
+                </ul>
+                <div class="project-links mt-3">
+                  <a href="/new/Hand_Gesture_car_Rx_ver_02.ino" download class="btn btn-primary me-2">Download RX Code</a>
+                  <a href="/new/Hand_Gesture_car_Tx_ver_02.ino" download class="btn btn-outline-primary">Download TX Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="col-lg-6">
+            <div class="card project-card">
+              <div class="card-body">
+                <h3 class="card-title">Room Entry Counter</h3>
+                <h6 class="card-subtitle mb-2 text-muted">Digital Electronics Project</h6>
+                <p class="card-text">
+                  A smart system using ICs and sensors to count people entering/exiting a room with real-time display updates.
+                </p>
+                <h5>Key Features:</h5>
+                <ul>
+                  <li>Automatic bidirectional counting</li>
+                  <li>Real-time display updates</li>
+                  <li>Capacity alerts for safety</li>
+                </ul>
+                <h5>Applications:</h5>
+                <ul>
+                  <li>Libraries and classrooms</li>
+                  <li>Office spaces</li>
+                  <li>Healthcare facilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-info">
+              <h4>Get In Touch</h4>
+              <p>Feel free to reach out for collaborations or just to say hello!</p>
+              
+              <div class="contact-details mt-4">
+                <div class="contact-item d-flex mb-3">
+                  <i class="fas fa-envelope me-3 mt-1 text-primary"></i>
+                  <div>
+                    <h5>Email</h5>
+                    <a href="mailto:suhailshowkat112@outlook.com">suhailshowkat112@outlook.com</a>
+                  </div>
+                </div>
+                
+                <div class="contact-item d-flex mb-3">
+                  <i class="fas fa-phone me-3 mt-1 text-primary"></i>
+                  <div>
+                    <h5>Phone</h5>
+                    <a href="tel:+919682175594">+91 9682175594</a>
+                  </div>
+                </div>
+                
+                <div class="contact-item d-flex mb-3">
+                  <i class="fas fa-map-marker-alt me-3 mt-1 text-primary"></i>
+                  <div>
+                    <h5>Location</h5>
+                    <p>Srinagar, Jammu & Kashmir, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <form class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2025 Suhail Showkat. All rights reserved.</p>
+      <div class="social-links mt-3">
+        <a href="https://www.linkedin.com/in/suhail-showkat-2ba317252" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/suhail.showkat_?igsh=OTNxOHN3a2d6YmN5" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919682175594" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <script>
+    // Initialize Typed.js
+    document.addEventListener('DOMContentLoaded', function() {
+      var typed = new Typed('.typed', {
+        stringsElement: '.typed-text',
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+      });
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
