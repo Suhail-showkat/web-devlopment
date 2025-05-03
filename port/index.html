@@ -17,7 +17,7 @@
 
   <!-- Hero -->
   <header class="bg-gradient-to-r from-blue-600 to-blue-900 text-white py-12 text-center">
-    <img src="/port/port.jpg" alt="Suhail Showkat" class="w-32 h-32 mx-auto rounded-full border-4 border-white mb-4 shadow-lg"/>
+    <img href="./port.jpg" src="./port.jpg" alt="Suhail Showkat" class="w-32 h-32 mx-auto rounded-full border-4 border-white mb-4 shadow-lg"/>
     <h1 class="text-4xl font-bold">Suhail Showkat</h1>
   
   </header>
@@ -62,8 +62,8 @@
         <p class="mb-4">
           <strong>Project Documentation:</strong>
           <ul class="list-disc list-inside ml-4 text-blue-600">
-            <li><a href="/port/Hand_Gesture_car_Rx_ver_02.ino" download>Download GESTURE CONTROLLED ARDUINO CAR(rx).pptx</a></li>
-            <li><a href="/port/Hand_Gesture_car_Tx_ver_02.ino" download>Download GESTURE CONTROLLED ARDUINO CAR (tx).pptx</a></li>
+            <li><a href="/Hand_Gesture_car_Rx_ver_02.ino" download>Download GESTURE CONTROLLED ARDUINO CAR(rx).pptx</a></li>
+          <li><a href="/Hand_Gesture_car_Tx_ver_02.ino" download>Download GESTURE CONTROLLED ARDUINO CAR (tx).pptx</a></li>
           </ul>
         </p>
         <p>This project demonstrates my expertise in embedded systems, sensor integration, and wireless robotics control.</p>
@@ -119,14 +119,31 @@
           <p class="mb-2"><i class="fas fa-phone text-blue-600 mr-2"></i><a href="tel:+919682175594">+91 9682175594</a></p>
           <p><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>Srinagar, Jammu & Kashmir, India</p>
         </div>
-        <!-- Contact Form -->
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required />
-          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" required />
-          <input type="text" placeholder="Subject" class="w-full p-3 border rounded" />
-          <textarea rows="4" placeholder="Message" class="w-full p-3 border rounded" required></textarea>
+        <form id="whatsapp-form" class="space-y-4" onsubmit="sendToWhatsApp(); return false;">
+          <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded" required />
+          <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded" required />
+          <input type="text" id="subject" placeholder="Subject" class="w-full p-3 border rounded" />
+          <textarea id="message" rows="4" placeholder="Message" class="w-full p-3 border rounded" required></textarea>
+        
           <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
         </form>
+        
+        <script>
+          function sendToWhatsApp() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+        
+            const phoneNumber = "919682175594"; // Your WhatsApp number in international format
+        
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+        
+            const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+            window.open(url, '_blank');
+          }
+        </script>
+        
       </div>
     </div>
   </section>
