@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Periodic Table</title>
+    <style>
+        .maincont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        td {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .alkali      { background-color: #ffb3b3; }
+        .alkaline    { background-color: #ffd699; }
+        .transition  { background-color: #d9d9ff; }
+        .post        { background-color: #b3ffd9; }
+        .metalloid   { background-color: #ffffb3; }
+        .nonmetal    { background-color: #b3e6ff; }
+        .halogen     { background-color: #ffccff; }
+        .noble       { background-color: #c2f0c2; }
+        .lanthanoid  { background-color: #e6ccff; }
+        .actinoid    { background-color: #ffcccc; }
+        
+    </style>
+</head>
+<body>
+    <div class="maincont">
+        <h1>Periodic Table of Elements</h1>
+        <div class="container">
+            <table>
+                <!-- Period 1 -->
+                <tr>
+                    <td class="nonmetal">H</td>
+                    <td colspan="16" style="border: none;"></td>
+                    <td class="noble">He</td>
+                </tr>
+
+                <!-- Period 2 -->
+                <tr>
+                    <td class="alkali">Li</td><td class="alkaline">Be</td>
+                    <td colspan="10" style="border:none"></td>
+                    <td class="metalloid">B</td><td class="nonmetal">C</td>
+                    <td class="nonmetal">N</td><td class="nonmetal">O</td>
+                    <td class="halogen">F</td><td class="noble">Ne</td>
+                </tr>
+
+                <!-- Period 3 -->
+                <tr>
+                    <td class="alkali">Na</td><td class="alkaline">Mg</td>
+                    <td colspan="10" style="border: none;"></td>
+                    <td class="post">Al</td><td class="metalloid">Si</td><td class="nonmetal">P</td>
+                    <td class="nonmetal">S</td><td class="halogen">Cl</td><td class="noble">Ar</td>
+                </tr>
+
+                <!-- Period 4 -->
+                <tr>
+                    <td class="alkali">K</td><td class="alkaline">Ca</td>
+                    <td class="transition">Sc</td><td class="transition">Ti</td><td class="transition">V</td><td class="transition">Cr</td>
+                    <td class="transition">Mn</td><td class="transition">Fe</td><td class="transition">Co</td><td class="transition">Ni</td>
+                    <td class="transition">Cu</td><td class="transition">Zn</td><td class="post">Ga</td><td class="metalloid">Ge</td>
+                    <td class="metalloid">As</td><td class="nonmetal">Se</td><td class="halogen">Br</td><td class="noble">Kr</td>
+                </tr>
+
+                <!-- Period 5 -->
+                <tr>
+                    <td class="alkali">Rb</td><td class="alkaline">Sr</td>
+                    <td class="transition">Y</td><td class="transition">Zr</td><td class="transition">Nb</td><td class="transition">Mo</td>
+                    <td class="transition">Tc</td><td class="transition">Ru</td><td class="transition">Rh</td><td class="transition">Pd</td>
+                    <td class="transition">Ag</td><td class="transition">Cd</td><td class="post">In</td><td class="post">Sn</td>
+                    <td class="metalloid">Sb</td><td class="metalloid">Te</td><td class="halogen">I</td><td class="noble">Xe</td>
+                </tr>
+
+                <!-- Period 6 -->
+                <tr>
+                    <td class="alkali">Cs</td><td class="alkaline">Ba</td><td class="lanthanoid">*</td>
+                    <td class="transition">Hf</td><td class="transition">Ta</td><td class="transition">W</td>
+                    <td class="transition">Re</td><td class="transition">Os</td><td class="transition">Ir</td><td class="transition">Pt</td>
+                    <td class="transition">Au</td><td class="transition">Hg</td><td class="post">Tl</td><td class="post">Pb</td>
+                    <td class="post">Bi</td><td class="metalloid">Po</td><td class="halogen">At</td><td class="noble">Rn</td>
+                </tr>
+
+                <!-- Period 7 -->
+                <tr>
+                    <td class="alkali">Fr</td><td class="alkaline">Ra</td><td class="actinoid">**</td>
+                    <td class="transition">Rf</td><td class="transition">Db</td><td class="transition">Sg</td>
+                    <td class="transition">Bh</td><td class="transition">Hs</td><td class="transition">Mt</td><td class="transition">Ds</td>
+                    <td class="transition">Rg</td><td class="transition">Cn</td><td class="post">Nh</td><td class="post">Fl</td>
+                    <td class="post">Mc</td><td class="post">Lv</td><td class="halogen">Ts</td><td class="noble">Og</td>
+                </tr>
+            </table>
+
+            <!-- Spacer between main table and lanthanides -->
+            <div style="height: 30px;"></div>
+
+            <!-- Lanthanides and Actinides -->
+            <table>
+                <!-- Lanthanides -->
+                <tr>
+                    <td colspan="2" style="border: none;"></td>
+                    <td class="lanthanoid">*La</td><td class="lanthanoid">Ce</td><td class="lanthanoid">Pr</td><td class="lanthanoid">Nd</td>
+                    <td class="lanthanoid">Pm</td><td class="lanthanoid">Sm</td><td class="lanthanoid">Eu</td><td class="lanthanoid">Gd</td>
+                    <td class="lanthanoid">Tb</td><td class="lanthanoid">Dy</td><td class="lanthanoid">Ho</td><td class="lanthanoid">Er</td>
+                    <td class="lanthanoid">Tm</td><td class="lanthanoid">Yb</td><td class="lanthanoid">Lu</td>
+                </tr>
+
+                <!-- Actinides -->
+                <tr>
+                    <td colspan="2" style="border: none;"></td>
+                    <td class="actinoid">**Ac</td><td class="actinoid">Th</td><td class="actinoid">Pa</td><td class="actinoid">U</td>
+                    <td class="actinoid">Np</td><td class="actinoid">Pu</td><td class="actinoid">Am</td><td class="actinoid">Cm</td>
+                    <td class="actinoid">Bk</td><td class="actinoid">Cf</td><td class="actinoid">Es</td><td class="actinoid">Fm</td>
+                    <td class="actinoid">Md</td><td class="actinoid">No</td><td class="actinoid">Lr</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
