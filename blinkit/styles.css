@@ -7,16 +7,23 @@
 
 body {
   background: #f9f9f9;
+  padding-top: 60px;
 }
 
 .navbar {
+  position: fixed;      /* Fixes navbar at top */
+  top: 0;
+  left: 0;
+  width: 100vw;        /* Full viewport width */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;       /* Keep on top */
 }
+
 
 .logo {
   font-size: 1.5rem;
@@ -41,13 +48,19 @@ nav ul li a {
 }
 
 .login-btn {
-  background: #7ac142;
+  background-color: #60b246;
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
+
+.login-btn:hover {
+  background-color: #4ca437;
+}
+
 
 .hero {
   background: url(https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/8/41/841815f0-72c7-11ea-8e3a-63196f8fc922/5e825a9ececd3.image.jpg) no-repeat center center/cover;
@@ -98,15 +111,63 @@ nav ul li a {
   font-weight: bold;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eaeaea;
-  margin-top: 2rem;
+.footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
 }
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #3a4553;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
 .search-box {
   display: flex;
-  align-items: center;
+  align-items: center;  
   background: #f1f1f1;
   padding: 0.3rem 0.5rem;
   border-radius: 8px;
@@ -129,4 +190,5 @@ footer {
   border: none;
   cursor: pointer;
   font-size: 1.1rem;
+  
 }
