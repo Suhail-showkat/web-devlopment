@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #126eb3; /* Blue background */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links img {
+  width: 16px;
+  vertical-align: middle;
+}
